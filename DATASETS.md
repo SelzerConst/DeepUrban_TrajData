@@ -190,8 +190,8 @@ It should look like this after downloading:
 **Note**: Only the annotations need to be downloaded (not the videos).
 
 ## DeepUrban Dataset
-The DeepUrban raw data can be downloaded from [DeepScenario](https://app.deepscenario.com/explore/release-list) and processed with the [DeepUrban Preprocesser](https://gitlab.lrz.de/000000003B9B4250/deepurban_scenariocreator).
-All dill scenarios are automatically created within its location folder, as well as the maps folder with all its content. The splits for the locations can be downloaded from [DeepUrban]() if not already done for the preprocessing from the raw data.
+The DeepUrban raw data can be downloaded from [DeepScenario](https://app.deepscenario.com/explore/release-list) and processed with the [DeepUrban Preprocesser](https://github.com/SelzerConst/DeepUrban_ScenarioPreprocessor).
+All dill scenarios are automatically created within its location folder, as well as the maps folder with all its content. The splits for the locations can be downloaded from [DeepUrban](https://iv.ee.hm.edu/pipeline/) if not already done for the preprocessing from the raw data.
 ```
 /path/to/dud/
         |   ├── <location_1>/
