@@ -10,6 +10,8 @@
 
 ### Package Installation needed as PyPI version does not support DeepUrban
 
+Original [trajdata github](https://github.com/NVlabs/trajdata/tree/main)
+
 The easiest way to install trajdata is through PyPI with
 ```sh
 pip install trajdata
