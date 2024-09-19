@@ -45,6 +45,39 @@ def draw_agent(
         elif agent_type == AgentType.BICYCLE:
             length = 1.9
             width = 0.5
+        elif agent_type == AgentType.MOTORCYCLE:
+            length = 2.0
+            width = 0.6
+        elif agent_type == AgentType.TRAILER:
+            length = 10.0
+            width = 2.5
+        elif agent_type == AgentType.TRUCK:
+            length = 10.0
+            width = 2.5
+        elif agent_type == AgentType.BUS:
+            length = 12.0
+            width = 2.5
+        elif agent_type == AgentType.SCOOTER:
+            length = 1.5
+            width = 0.5
+        elif agent_type == AgentType.TRAIN:
+            length = 20.0
+            width = 3.0
+        elif agent_type == AgentType.ANIMAL:
+            length = 1.0
+            width = 1.0
+        elif agent_type == AgentType.BICYCLERACK:
+            length = 1.0
+            width = 1.0
+        elif agent_type == AgentType.MOVABLEOBJECT:
+            length = 1.0
+            width = 1.0
+        elif agent_type == AgentType.AGRICULTURALVEHICLE:
+            length = 1.0
+            width = 1.0
+        elif agent_type == AgentType.CONSTRUCTIONVEHICLE:
+            length = 1.0
+            width = 1.0
         else:
             length = 1.0
             width = 1.0
@@ -177,15 +210,39 @@ def plot_agent_batch_all(
             batch.agents_from_world_tf[i].cpu()
         )
 
-        palette = sns.color_palette("husl", 4)
-        if agent_type == AgentType.VEHICLE:
+        palette = sns.color_palette("husl", 15)
+        if agent_type == AgentType.VEHICLE and agent_name != "ego":
             color = palette[0]
         elif agent_type == AgentType.PEDESTRIAN:
             color = palette[1]
         elif agent_type == AgentType.BICYCLE:
             color = palette[2]
-        else:
+        elif agent_type == AgentType.MOTORCYCLE:
             color = palette[3]
+        elif agent_type == AgentType.TRAILER:
+            color = palette[4]
+        elif agent_type == AgentType.TRUCK:
+            color = palette[5]
+        elif agent_type == AgentType.BUS:
+            color = palette[6]
+        elif agent_type == AgentType.SCOOTER:
+            color = palette[7]
+        elif agent_type == AgentType.TRAIN:
+            color = palette[8]
+        elif agent_type == AgentType.ANIMAL:
+            color = palette[9]
+        elif agent_type == AgentType.BICYCLERACK:
+            color = palette[10]
+        elif agent_type == AgentType.MOVABLEOBJECT:
+            color = palette[11]
+        elif agent_type == AgentType.AGRICULTURALVEHICLE:
+            color = palette[12]
+        elif agent_type == AgentType.CONSTRUCTIONVEHICLE:
+            color = palette[13]
+        elif agent_name == "ego":
+            color = palette[14]
+        else:
+            color = palette[15]
 
         transform = (
             mtransforms.Affine2D(matrix=base_frame_from_agent_tf.numpy()) + ax.transData

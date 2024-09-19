@@ -16,7 +16,6 @@ def main():
         centric="scene",
         desired_dt=0.1,
         only_types=[AgentType.VEHICLE, AgentType.PEDESTRIAN],
-        # only_predict=[AgentType.VEHICLE],
         state_format="x,y,z,xd,yd,h",
         obs_format="x,y,z,xd,yd,h",
         agent_interaction_distances=defaultdict(lambda: 30.0),
@@ -31,7 +30,7 @@ def main():
         num_workers=1,
         verbose=True,
         data_dirs={  # Remember to change this to match your filesystem!
-            "deepurban_trainval": "~/DeepUrban/deepurban_scenarios_v2",
+            "deepurban_trainval": "~/DeepUrban/deepurban_scenarios",
             "nusc_trainval": "~/nuscenes",
             
         },
@@ -55,7 +54,7 @@ def main():
         num_workers=1,
         verbose=True,
         data_dirs={  # Remember to change this to match your filesystem!
-            "deepurban_trainval": "~/DeepUrban/deepurban_scenarios_v2",
+            "deepurban_trainval": "~/DeepUrban/deepurban_scenarios",
             "nusc_trainval": "~/nuscenes",
             
         },
