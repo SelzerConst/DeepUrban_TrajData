@@ -66,7 +66,7 @@ Currently, the dataloader supports interfacing with the following datasets:
 | UCY - Zara1 | `eupeds_zara1` | `train`, `val`, `train_loo`, `val_loo`, `test_loo` | `cyprus` | The Zara1 scene from the UCY Pedestrians dataset | 0.4s (2.5Hz) | |
 | UCY - Zara2 | `eupeds_zara2` | `train`, `val`, `train_loo`, `val_loo`, `test_loo` | `cyprus` | The Zara2 scene from the UCY Pedestrians dataset | 0.4s (2.5Hz) | |
 | Stanford Drone Dataset | `sdd` | `train`, `val`, `test` | `stanford` | Stanford Drone Dataset (60 scenes, randomly split 42/9/9 (70%/15%/15%) for training/validation/test) | 0.0333...s (30Hz) | |
-| DeepUrban Dataset | deepurban_trainval | `train_<location>` `val_<location>` e.g. `train_MunichTal`| `MunichTal` `SanFrancisco` `Sindelfingen` `StuttgartUniversitaet` | DeepUrban Dataset (80/10/10 split) | 0.1s (10Hz) | :white_check_mark: | 
+| DeepUrban Dataset | deepurban_trainval | `train_<location>` `val_<location>` e.g. `train_MunichTal`| `MunichTal` `SanFrancisco` `SindelfingenBreuningerland` `StuttgartUniversitaetsstrasse` | DeepUrban Dataset (80/10/10 split) | 0.1s (10Hz) | :white_check_mark: | 
 |
 
 
