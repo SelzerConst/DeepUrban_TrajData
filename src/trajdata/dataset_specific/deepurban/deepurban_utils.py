@@ -71,22 +71,6 @@ def get_dt(data_dir: str) -> float:
     dt = dt_data["dt"]
     return dt
 
-# DEEPURBAN_FULL_MAP_NAME_DICT: Final[Dict[str, str]] = {
-#     "MunichTal": "MunichTal",
-#     "Sindelfingen": "SindelfingenBreuningerland",
-#     "StuttgartUniversitaetsstrasse": "StuttgartUniversitaetsstrasse",
-#     "SanFrancisco": "SanFrancisco",
-# }
-# DEEPURBAN_MAP_LATITUDE_LONGITUDE_DICT: Final[Dict[str, Tuple[float, float]]] = {
-#     "MunichTal": (48.13634617364669, 11.5767373168311),
-#     "SindelfingenBreuningerland": (48.70384499494175, 9.032578915670943),
-#     "StuttgartUniversitaetsstrasse": (48.74339434790117, 9.103934405250868),
-#     "SanFrancisco": (37.80051726314147, -122.415948223245),
-# }
-
-# DEEPURBAN_LOCATIONS: Final[Tuple[str]] = tuple(
-#     DEEPURBAN_FULL_MAP_NAME_DICT.values()
-# )
 
 DEEPURBAN_TRAFFIC_STATUS_DICT: Final[Dict[str, TrafficLightStatus]] = {
     "green": TrafficLightStatus.GREEN,
@@ -207,7 +191,6 @@ def read_split_log(data_dir: str, env_name: str) -> Tuple[Dict[str, List[str]], 
     name = env_name.split("_")[1]
     # Get the json file name
     # Read in all json files in split folder and name in filename
-        # Read in all json files in split folder and name in filename
     pattern = f"{data_dir}/../split/*{name}*.json"
     json_files = glob.glob(pattern)
     

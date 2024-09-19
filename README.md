@@ -1,6 +1,9 @@
 # DeepUrban: Interaction-aware Trajectory Prediction and Planning for Automated Driving by Aerial Imagery 
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+The following is an extension of the [trajdata](https://github.com/NVlabs/trajdata/tree/main) dataloader to easily access our dataset [DeepUrban](https://iv.ee.hm.edu/deepurban/).
+
 ### Package Developer Installation
 
 First, in whichever environment you would like to use (conda, venv, ...), make sure to install all required dependencies with (for easier version control only nuscenes dependencies are installed, if other dependencies are needed please uncomment them in requirements.txt)
@@ -13,8 +16,8 @@ pip install -e .
 ```
 Then, download the raw datasets (nuScenes, Lyft Level 5, ETH/UCY, etc.) in case you do not already have them. For more information about how to structure dataset folders/files, please see [`DATASETS.md`](./DATASETS.md).
 
-### DeeoUrban Changes
-The [DeepUrban](https://iv.ee.hm.edu/deepurban/) was added as suggested by the original trajdata. Changes needed to be done, if you want to expand the original trajdata yourself, can be looked up  [here](https://github.com/NVlabs/trajdata/tree/main).
+### DeepUrban Changes
+The DeepUrban was added as suggested by the original trajdata. Changes needed to be done, if you want to expand the original trajdata yourself, can be looked up  [here](https://github.com/NVlabs/trajdata/tree/main).
 An additional change have been made in `/src/trajdata/data_structures/agent.py` by extending the AgentTypes as well as in `/src/trajdata/visualization/vis.py` to visualize all the different AgentTypes accordingly.
 
 ## Example
