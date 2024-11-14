@@ -86,3 +86,15 @@ If you use this software, please cite it as follows:
   address = {Edmonton, Canada},
 }
 ```
+Please cite also the original work of Ivanovic et al.:
+```
+@Inproceedings{ivanovic2023trajdata,
+  author = {Ivanovic, Boris and Song, Guanyu and Gilitschenski, Igor and Pavone, Marco},
+  title = {{trajdata}: A Unified Interface to Multiple Human Trajectory Datasets},
+  booktitle = {{Proceedings of the Neural Information Processing Systems (NeurIPS) Track on Datasets and Benchmarks}},
+  month = dec,
+  year = {2023},
+  address = {New Orleans, USA},
+  url = {https://arxiv.org/abs/2307.13924}
+}
+```
